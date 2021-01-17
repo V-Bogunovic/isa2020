@@ -20,6 +20,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'roleable_id',
+        'roleable_type'
     ];
 
     /**
@@ -40,4 +42,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the parent roleable model (Pharmacist, Patient, Supplier...).
+     */
+    public function roleable()
+    {
+        return $this->morphTo();
+    }
 }
