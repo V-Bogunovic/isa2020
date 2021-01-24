@@ -4,7 +4,7 @@ namespace App\Enumerations;
 
 use ReflectionClass;
 
-abstract class BasicEnum {
+abstract class BasicEnumeration {
     private static $constCacheArray = NULL;
 
     private static function getConstants() {

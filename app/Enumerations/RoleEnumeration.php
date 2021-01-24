@@ -2,7 +2,7 @@
 
 namespace App\Enumerations;
 
-abstract class RoleEnumeration extends BasicEnum {
+abstract class RoleEnumeration extends BasicEnumeration {
     const PATIENT = 'PATIENT';
     const PHARMACIST = 'PHARMACIST';
     const PHARMACY_ADMIN = 'PHARMACY_ADMIN';
