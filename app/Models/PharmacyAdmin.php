@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Patient extends Model
+class PharmacyAdmin extends Model
 {
     use HasFactory;
 
     /**
-     * Get the patient's user.
+     * Get the pharmacy admin's user.
      */
     public function user()
     {
