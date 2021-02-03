@@ -41,3 +41,12 @@ npm run dev
 ```
 php artisan serve
 ```
+
+
+User list (password for all users is 123456):
+    - sys.admin@isa2020.ac.rs
+    - pharmacy.admin@isa2020.ac.rs
+    - pharmacist@isa2020.ac.rs
+    - dermatologist@isa2020.ac.rs
+    - supplier@isa2020.ac.rs
+    - patient@isa2020.ac.rs
