@@ -15,6 +15,7 @@ class CreatePharmacyAdminsTable extends Migration
     {
         Schema::create('pharmacy_admins', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pharmacy_id')->constrained();
             $table->timestamps();
         });
     }

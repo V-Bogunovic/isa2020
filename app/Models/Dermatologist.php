@@ -16,4 +16,12 @@ class Dermatologist extends Model
     {
         return $this->morphOne(User::class, 'roleable');
     }
+
+    /**
+     * The pharmacies that dermatologist works at.
+     */
+    public function pharmacies()
+    {
+        return $this->belongsToMany(Pharmacy::class);
+    }
 }

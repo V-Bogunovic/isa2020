@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePharmacistsTable extends Migration
+class CreateDermatologistPharmacyTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreatePharmacistsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pharmacists', function (Blueprint $table) {
-            $table->id();
+        Schema::create('dermatologist_pharmacy', function (Blueprint $table) {
             $table->foreignId('pharmacy_id')->constrained();
-            $table->timestamps();
+            $table->foreignId('dermatologist_id')->constrained();
         });
     }
 
@@ -27,6 +26,6 @@ class CreatePharmacistsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pharmacists');
+        Schema::dropIfExists('dermatologist_pharmacy');
     }
 }

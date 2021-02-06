@@ -15,8 +15,8 @@ class RolesTabelsSeeder extends Seeder
     public function run()
     {
         DB::table('system_admins')->insert([[]]);
-        DB::table('pharmacy_admins')->insert([[]]);
-        DB::table('pharmacists')->insert([[]]);
+        DB::table('pharmacy_admins')->insert([['pharmacy_id' => 1]]);
+        DB::table('pharmacists')->insert([['pharmacy_id' => 1]]);
         DB::table('dermatologists')->insert([[]]);
         DB::table('suppliers')->insert([[]]);
         DB::table('patients')->insert([[]]);
